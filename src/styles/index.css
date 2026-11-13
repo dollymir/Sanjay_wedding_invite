@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFF6E9;
+    color: #571C35;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom regal scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FFF6E9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D8B56D;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #801F3D;
+  }
+}
+
+/* Indian Wedding Royal Arch Borders */
+.arch-card {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Gold Shimmer Text Effect */
+.gold-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #9F7E39 0%,
+    #D8B56D 25%,
+    #FFF6E9 50%,
+    #D8B56D 75%,
+    #9F7E39 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Foil Border Pattern */
+.gold-foil-border {
+  border-image: linear-gradient(135deg, #F4E3B5, #D8B56D, #9F7E39, #D8B56D) 1;
+}
+
+/* Floating animation for decorative elements */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Falling Rose/Marigold Petals */
+@keyframes petalFall {
+  0% {
+    transform: translate(0, -10vh) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(80px, 110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.petal-particle {
+  position: fixed;
+  top: -20px;
+  pointer-events: none;
+  z-index: 40;
+  animation-name: petalFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
