@@ -16,7 +16,7 @@ class WeddingAudioManager {
   private isMuted: boolean = false;
   private volume: number = 0.7;
   private listeners: Set<AudioStateListener> = new Set();
-  private trackSrc: string = "/assets/music/wedding-song.mp3";
+  private trackSrc: string = "/Sanjay_wedding_invite/assets/music/wedding-song.mp3";
   private trackTitle: string = "Mangalam Mangal Dhwani";
 
   // Web Audio Fallback Synthesizer
