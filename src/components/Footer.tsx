@@ -1,21 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { weddingConfig } from '../data/weddingConfig';
-import { Heart, ArrowUp, Share2, Copy, Check, MapPin, Calendar } from 'lucide-react';
+import { Heart, ArrowUp, MapPin, Calendar } from 'lucide-react';
 import { GaneshaIcon } from './CulturalIcons';
 
-interface FooterProps {
-  onShareWhatsApp: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ onShareWhatsApp }) => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
-
+export const Footer: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

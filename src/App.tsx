@@ -97,7 +97,7 @@ export const App: React.FC = () => {
       </main>
 
       {/* 7. Footer */}
-      <Footer onShareWhatsApp={handleShareWhatsApp} />
+      <Footer />
     </div>
   );
 };
