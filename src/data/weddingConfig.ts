@@ -157,7 +157,7 @@ export const weddingConfig: WeddingConfig = {
       familyName: "The Family of Sanjay",
       grandparents: {
         grandfather: "Late Kisanchand Mirchandani",
-        grandmother: "Late Radha Mirchandani",
+        grandmother: "Late Radhaben Mirchandani",
         highlightText:
           "With the revered blessings of our beloved Grandparents, whose timeless guidance and unconditional affection illuminate our paths.",
       },
@@ -265,7 +265,7 @@ export const weddingConfig: WeddingConfig = {
     {
       id: "baharan",
       number: "03",
-      name: "Pujya Baharan Saheb",
+      name: "Pujya Behrana Sahib",
       day: "day1",
       dayLabel: "Day 1 – 3 January 2027",
       date: "2027-01-03",
@@ -327,7 +327,7 @@ export const weddingConfig: WeddingConfig = {
     {
       id: "sathsod",
       number: "05",
-      name: "Sathsod",
+      name: "Saath Shagun",
       day: "day2",
       dayLabel: "Day 2 – 4 January 2027",
       date: "2027-01-04",
@@ -387,7 +387,7 @@ export const weddingConfig: WeddingConfig = {
     {
       id: "bharat",
       number: "07",
-      name: "Bharat",
+      name: "Barat",
       day: "day2",
       dayLabel: "Day 2 – 4 January 2027",
       date: "2027-01-04",
@@ -417,7 +417,7 @@ export const weddingConfig: WeddingConfig = {
     {
       id: "wedding-ceremony",
       number: "08",
-      name: "Sasth Milab",
+      name: "Hasth Milap",
       day: "day2",
       dayLabel: "Day 2 – 4 January 2027",
       date: "2027-01-04",
